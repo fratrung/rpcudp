@@ -120,7 +120,7 @@ class RPCProtocol(asyncio.DatagramProtocol):
         def func(address, *args):
             msg_id = sha1(os.urandom(32)).digest()
             data = umsgpack.packb([name, args])
-            if len(data) > 8192:
+            if len(data) > 18192:
                 raise MalformedMessage("Total length of function "
                                        "name and arguments cannot exceed 8K")
             txdata = b'\x00' + msg_id + data

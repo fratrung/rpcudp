@@ -5,13 +5,13 @@ import rpcudp
 setup(
     name="rpcudp",
     version=rpcudp.__version__,
-    description="Asynchronous RPC via UDP",
+    description="Asynchronous RPC via UDP with increased data length",
     long_description=open("README.md", encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     author="Brian Muller",
     author_email="bamuller@gmail.com",
     license="MIT",
-    url="http://github.com/bmuller/rpcudp",
+    url="http://github.com/fratrung/rpcudp",
     packages=find_packages(),
     install_requires=open("requirements.txt").readlines(),
     classifiers=[
