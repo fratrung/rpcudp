@@ -19,7 +19,7 @@ class RPCProtocol(asyncio.DatagramProtocol):
     Protocol implementation using msgpack to encode messages and asyncio
     to handle async sending / recieving.
     """
-    def __init__(self, wait_timeout=5):
+    def __init__(self, wait_timeout=1):
         """
         Create a protocol instance.
 
